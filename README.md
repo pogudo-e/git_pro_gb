@@ -12,3 +12,14 @@ cd git_pro_gb/
 echo "print('hello word!')" > main.py
 ```
 
+```
+git add .
+```
+
+```
+git commit -m 'commit'
+```
+
+```
+git push
+```
