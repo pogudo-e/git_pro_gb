@@ -71,5 +71,47 @@ git diff 791f5 793af
 2. Верните эти изменения командой git revert последовательно, чтобы в итоге получилось тоже три коммита.
 
 ```
+git revert cb0955
 
+git add .
+
+git commit -m 'revert 1 com'
+```
+
+```
+git revert b9bfa0
+
+git add .
+
+git commit -m 'revert 2 ok'
+```
+
+```
+git revert 15b769
+
+git add .
+
+git commit -m 'revert 3 ok'
+```
+
+3. Попробуйте отменить эти три коммита:
+* последний — командами git reset --soft и git restore;
+* предпоследний — командой git reset --mixed и git restore;
+* первый — командой git reset --hard.
+
+```
+git reset --soft d84ed5
+
+git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   main.py
+
+git add main.py
+
+git commit -m 'reset 1'
 ```
