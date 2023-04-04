@@ -8,3 +8,4 @@ for i in range(1,10):
 
 # А тут еще и комментарий добавим)
 print("hello word!")
+print("hello word!")
